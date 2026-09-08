@@ -26,6 +26,7 @@ Example:
 
 python3 calltracer.py target.py
 ```
+```bash
 Example
 
 Given:
@@ -52,6 +53,7 @@ hello, Yogurt!
 [13:35:21]   RETURN <module> -> None
 [13:35:21] RETURN <module> -> None
 [13:35:21] DONE
+```
 
 What It Traces
 
