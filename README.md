@@ -26,8 +26,8 @@ Example:
 
 python3 calltracer.py target.py
 ```
+# Example
 ```bash
-Example
 
 Given:
 
