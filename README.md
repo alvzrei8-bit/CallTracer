@@ -25,7 +25,7 @@ python3 calltracer.py <input.py>
 Example:
 
 python3 calltracer.py target.py
-
+```
 Example
 
 Given:
