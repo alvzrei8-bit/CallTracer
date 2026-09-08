@@ -42,12 +42,12 @@ CallTracer can reveal the runtime execution flow:
 [13:35:21] CALL <module>() [target.py:0]
 [13:35:21]   CALL <module>() [<string>:0]
 [13:35:21]     CALL main() [<string>:7]
-[13:35:21]       CALL hello(name='ChatGPT') [<string>:1]
+[13:35:21]       CALL hello(name='Yogurt') [<string>:1]
 [13:35:21]       RETURN hello -> 'hello, ChatGPT!'
 [13:35:21]       CALL add(a=5, b=7) [<string>:4]
 [13:35:21]       RETURN add -> 12
-[13:35:21]     RETURN main -> ('hello, ChatGPT!', 12)
-hello, ChatGPT!
+[13:35:21]     RETURN main -> ('hello, Yogurt!', 12)
+hello, Yogurt!
 12
 [13:35:21]   RETURN <module> -> None
 [13:35:21] RETURN <module> -> None
