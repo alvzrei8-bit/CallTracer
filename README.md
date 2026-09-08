@@ -55,7 +55,7 @@ hello, Yogurt!
 [13:35:21] DONE
 ```
 
-What It Traces
+# What It Traces
 
 CallTracer uses Python's runtime tracing system to observe:
 
@@ -74,6 +74,7 @@ Thread execution
 
 For example:
 
+```python
 def hello(name):
     return f"Hello {name}"
 
@@ -86,17 +87,20 @@ def main():
     return x, y
 
 print(main())
+```
 
 Produces a trace similar to:
 
+```bash
 CALL main()
   CALL hello(name='World')
   RETURN hello -> 'Hello World'
   CALL add(a=5, b=7)
   RETURN add -> 12
 RETURN main -> ('Hello World', 12)
+```
 
-Why?
+# Why?
 
 CallTracer is useful for:
 
@@ -115,7 +119,7 @@ Reverse engineering Python applications
 Learning how Python code executes
 
 
-How It Works
+# How It Works
 
 CallTracer uses:
 
@@ -129,7 +133,7 @@ to receive runtime events from Python.
 
 It then filters the events and displays useful execution information in the terminal.
 
-Limitations
+# Limitations
 
 CallTracer is a runtime tracer, not a full sandbox.
 
@@ -150,14 +154,14 @@ Native extension calls
 
 Use it only with code you understand or in an appropriately isolated environment.
 
-Requirements
+# Requirements
 
 Python 3.x
 
 No external dependencies
 
 
-Related Tool
+# Related Tool
 
 NetTracer — runtime network/HTTP activity tracer.
 
